@@ -446,9 +446,8 @@ ul.how-does-it-work li img.codereview {
 .well.pricing .big small {
   position: relative;
   bottom: 12px;
-  font-size: 36px;
+  font-size: 24px;
   opacity: 0.4;
-  margin-right: 2px;
 }
 .well.pricing .info {
   opacity: 0.6;
