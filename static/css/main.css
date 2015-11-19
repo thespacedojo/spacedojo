@@ -58,8 +58,8 @@ footer,
   background-color: #e7e7e7;
   border: none;
   box-shadow: none;
-  border-radius: 12px;
   border-top-left-radius: 12px !important;
+  border-radius: 12px;
 }
 .navbar .dropdown-menu li a {
   color: #333;
@@ -105,7 +105,6 @@ footer,
   border: none;
   margin-top: 0;
   padding: 0;
-/* Small devices (tablets, 768px and up) */
 }
 @media screen and (min-width: 768px) {
   .navbar-collapse .nav {
