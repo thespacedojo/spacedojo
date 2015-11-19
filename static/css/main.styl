@@ -18,7 +18,7 @@ img
 
 .wrapper
   min-height 100%
-  height auto !important
+  height auto
   height 100%
   margin 0 auto -55px
   padding 0
@@ -32,32 +32,50 @@ footer,
 
 .navbar
   &.alt
-    background none !important
-    border none !important
+    background none
+    border none
     
     li a
       color #333
       
       /* Small devices (tablets, 768px and up) */
       @media screen and (min-width: 768px) 
-        color white !important
+        color white
       
       &:hover
-        background rgba(255,255,255,0.1) !important
+        background rgba(255,255,255,0.1)
+        color white
     
-  background-color #fff !important
+  background-color #fff
   font-family roboto
   text-transform lowercase
   font-weight 700
   border-radius 0
-  margin-bottom 0 !important
-  // border none !important
+  margin-bottom 0
+  
+  .dropdown-menu
+    top 35px
+    background-color #e7e7e7
+    border none
+    box-shadow none
+    border-radius 12px
+    // border-top-right-radius 12px !important
+    border-top-left-radius 12px !important
+    
+    li a
+      color #333
+      &:hover
+        background none
+        color #6b539c
+    
+    li.divider
+      border-bottom 1px solid #ccc
   
   .navbar-toggle
-    top 7px !important
+    top 7px
   
   .navbar-brand
-    padding 0 !important
+    padding 0
     margin 10px 0 10px
     height 44px
     
@@ -66,25 +84,26 @@ footer,
 
     /* Small devices (tablets, 768px and up) */
     @media screen and (min-width: 768px) 
-      margin 17px 0 0 !important
+      margin 17px 0 0
       .logo
         height 100%
     
     .logo-dark
       display none
+  
 
 .navbar-collapse
   // margin-bottom 0
   border none
-  z-index 9999999999 !important
+  z-index 9999999999
   display block
   border none
   
   .nav
     background #f2f2f2
-    border none !important
+    border none
     margin-top 0
-    padding 0 !important
+    padding 0
     
     /* Small devices (tablets, 768px and up) */
     @media screen and (min-width: 768px) 
@@ -92,7 +111,7 @@ footer,
       margin-top 20px
     
     a
-      margin 0 0 10px 0 !important
+      margin 0 0 10px 0
 
 
 .navbar,
@@ -102,20 +121,25 @@ footer,
 .navbar li
   margin 2px 0
 
-/* use of important to override bootstrap styles */
 .navbar li a
   color #bbb
-  padding 8px 20px !important
-  border-radius 20px !important
-  margin 22px 8px 34px !important
+  padding 8px 20px
+  border-radius 20px
+  margin 22px 8px 34px
   font-size 14px
 
 .navbar li a:last-child
-  margin-right 15px !important
+  margin-right 15px
 
 .navbar li a:hover
-  background-color #f2f2f2 !important
+  background-color #f2f2f2
   color #111
+
+.navbar li.open
+  a
+    border-bottom-right-radius 0
+    border-bottom-left-radius 0
+
 
 h1, h2, h3, h4, h5, h6
   font-family roboto
@@ -123,7 +147,7 @@ h1, h2, h3, h4, h5, h6
   font-weight 500
 
   &.clean
-    margin 0 !important
+    margin 0
 
 h1
   color #333
@@ -189,12 +213,12 @@ ul li
 a.button
   padding 16px 40px
   background #6b539c
-  color #fff !important
-  opacity 1 !important
+  color #fff
+  opacity 1
   margin-top 20px
   font-size 20px
   border-radius 30px
-  text-decoration none !important
+  text-decoration none
   font-weight 700
   
   &:hover
@@ -216,7 +240,7 @@ a.button
   // background url('https://s3.amazonaws.com/amandasaffer/static/images/1482.jpg')
   background-size cover
   // background-position 30% 34%
-  background-position 50% 58% !important
+  background-position 50% 58%
   background-attachment fixed
   margin 0px 0 100px 0
   
@@ -435,7 +459,7 @@ ul.how-does-it-work
     position relative
     padding 10px 12px 10px 0px
     bottom 7px
-    margin-right 5px !important
+    margin-right 5px
     color lighten(#201730, 30%)
     
     /* Medium devices (desktops, 992px and up) */
