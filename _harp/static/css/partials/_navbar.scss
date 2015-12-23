@@ -1,0 +1,120 @@
+// convert font sizes to rem using offroad code calculator
+
+.navbar, .navbar-default {
+  height: 90px;
+  padding-top: 6px;
+}
+
+.navbar {
+  background: transparent;
+  font-family: $sans-serif;
+  text-transform: lowercase;
+  font-weight: 700;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .navbar-toggle { 
+    top: 7px; 
+  }
+
+  /* BRAND // Primary styles */
+  .navbar-brand {
+    padding: 0;
+    margin: 10px 0 10px;
+    height: 35px;
+  }
+
+  .navbar-brand .logo {
+    height: 90%;
+  }
+
+  /* BRAND // For bigger screens */
+  @media screen and (min-width: 768px) {
+    .navbar-brand {
+      margin: 20px 0 0;
+    }
+    .navbar-brand .logo {
+      height: 100%;
+      margin-left: 1.8rem;
+    }
+  }
+
+  /* LIST ITEMS */
+  li {
+    margin: 3px 0;
+  }
+  li a {
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 22px 8px 34px;
+    font-size: 14px;
+  }
+
+  .nav li a {
+    color: rgba(255,255,255,.9); 
+  }
+  .nav li a:last-child {
+    margin-right: 15px;
+  }
+
+  .nav li a:hover {
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9); 
+  }
+}
+
+/* COLLAPSABLE */
+.navbar-collapse {
+  border: none;
+  z-index: 9999999999;
+  display: block;
+  border: none;
+
+  .nav {
+    background: #f2f2f2;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .nav a {
+    margin: 0 0 10px 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    .nav {
+      background: transparent;
+      margin-top: 20px;
+    }
+  }
+}
+
+.navbar-transparent {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  &::after {
+    border-bottom: 2px solid rgba(215,199,224,.1);
+    width: 94%;
+    margin: .6rem auto 0;
+  }
+}
+
+.navbar-transparent .nav {
+  li a { 
+    color: rgba(255,255,255,.9); 
+  }
+
+  li a:hover {
+    background: rgba(255,255,255,.1);
+    color: rgba(255,255,255,.9); 
+  }
+}

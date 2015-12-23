@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>SpaceDojo</title>
+    <meta name="description" content="Spacedojo helps you learn to build apps with Javascript.">
+
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+
+  <body>
+    <!-- SVGS -->
+    <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <symbol id="icon-books" viewBox="0 0 1152 1024">
+          <title>books</title>
+          <path class="path1" d="M224 128h-192c-17.6 0-32 14.4-32 32v704c0 17.6 14.4 32 32 32h192c17.6 0 32-14.4 32-32v-704c0-17.6-14.4-32-32-32zM192 320h-128v-64h128v64z"></path>
+          <path class="path2" d="M544 128h-192c-17.6 0-32 14.4-32 32v704c0 17.6 14.4 32 32 32h192c17.6 0 32-14.4 32-32v-704c0-17.6-14.4-32-32-32zM512 320h-128v-64h128v64z"></path>
+          <path class="path3" d="M765.088 177.48l-171.464 86.394c-15.716 7.918-22.096 27.258-14.178 42.976l287.978 571.548c7.918 15.718 27.258 22.098 42.976 14.178l171.464-86.392c15.716-7.92 22.096-27.26 14.178-42.974l-287.978-571.55c-7.92-15.718-27.26-22.1-42.976-14.18z"></path>
+        </symbol>
+        <symbol id="icon-learning" viewBox="0 0 27 27">
+          <title>learning</title>
+          <path class="path1" d="M21,2H3C1.897,2,1,2.898,1,4v16c0,1.104,0.897,2,2,2h18c1.103,0,2-0.896,2-2V4C23,2.898,22.103,2,21,2zM21,6h-8V4h8L21,6z M8,6V4h3v2H8z M6,4v2H3V4H6z M3,20V8h17.999l-0.002,12H3z"></path>
+          <rect x="13" y="15" fill="#ccc" width="5" height="2"/>
+          <polygon fill="#ccc" points="6.293,11.708 8.586,14 6.293,16.294 7.707,17.708 11.414,14 7.707,10.294    "/>
+        </symbol>
+        <symbol id="icon-hammer" viewBox="0 0 27 27.002">
+          <title>hammer</title>
+          <path class="path1" d="M21.372,15.929C21.751,15.777,22,15.41,22,15v-3c0-0.551-0.448-1-1-1H11c-0.552,0-1,0.449-1,1H3c-0.369,0-0.708,0.203-0.882,0.528c-0.174,0.325-0.155,0.719,0.05,1.026l2,3c0.153,0.23,0.395,0.386,0.667,0.432L10,17.848v0.535l-3.447,1.724C6.214,20.275,6,20.622,6,21v2c0,0.552,0.448,1,1,1h14c0.552,0,1-0.448,1-1v-2c0-0.409-0.249-0.776-0.628-0.928L17,18.324v-0.646L21.372,15.929z M5.592,15.086L4.869,14H10v1.82L5.592,15.086z M15.628,19.929L20,21.677V22H8V21.62l3.447-1.725C11.786,19.726,12,19.379,12,19v-2v-4h8v1.323l-4.372,1.749C15.249,16.224,15,16.591,15,17v2C15,19.41,15.249,19.777,15.628,19.929z"></path>
+          <path class="path2" d="M12,9c0,0.552,0.448,1,1,1h5c0.552,0,1-0.448,1-1V1c0-0.551-0.448-1-1-1h-5c-0.552,0-1,0.449-1,1v3H2v2h10V9z M14,2h3v6h-3V2z"></path>
+        </symbol>
+        <symbol id="icon-user-chat" viewBox="0 0 27 27">
+          <title>chat</title>
+          <path class="path1" d="M15,16c-0.152,0-0.306-0.035-0.447-0.105C14.214,15.726,14,15.379,14,15v-2h-1v-2h2c0.552,0,1,0.448,1,1v1l2.4-1.8c0.173-0.13,0.384-0.2,0.6-0.2h3V4H12v3h-2V4c0-1.104,0.897-2,2-2h10c1.103,0,2,0.896,2,2v7c0,1.103-0.897,2-2,2h-2.667L15.6,15.8C15.423,15.932,15.212,16,15,16z"></path>
+          <path class="path2" d="M8,16c-2.206,0-4-1.794-4-4c0-2.206,1.794-4,4-4s4,1.794,4,4C12,14.206,10.206,16,8,16z M8,10c-1.103,0-2,0.896-2,2c0,1.103,0.897,2,2,2s2-0.897,2-2C10,10.896,9.103,10,8,10z"></path>
+          <path class="path3" d="M16,24H0v-1c0-3.533,3.29-6,8-6s8,2.467,8,6V24z M2.159,22h11.683c-0.598-1.808-2.833-3-5.841-3S2.757,20.192,2.159,22z"></path>
+        </symbol>
+        <symbol id="icon-slack" viewBox="0 0 951 1024">
+          <title>slack</title>
+          <path class="path1" d="M868 443.429q35.429 0 59.143 23.143t23.714 58q0 55.429-53.143 74.286l-98.286 33.714 32 95.429q4 12 4 26.857 0 33.714-24 58.286t-57.714 24.571q-26.857 0-48.857-15.429t-30.571-41.143l-31.429-94.286-177.143 60.571 31.429 93.714q4.571 13.714 4.571 26.857 0 33.714-24 58.286t-58.286 24.571q-26.857 0-48.571-15.429t-30.286-41.143l-31.429-93.143-87.429 30.286q-16.571 5.143-28.571 5.143-34.857 0-58-22.857t-23.143-57.714q0-26.857 15.714-48.571t40.857-30.286l89.143-30.286-60-178.857-89.143 30.857q-14.857 4.571-27.429 4.571-34.286 0-57.714-23.143t-23.429-57.429q0-26.857 15.714-48.571t40.857-30.286l89.714-30.286-30.286-90.857q-4.571-13.714-4.571-26.857 0-34.286 24-58.571t58.286-24.286q26.857 0 48.571 15.429t30.286 41.143l30.857 91.429 177.143-60-30.857-91.429q-4.571-13.714-4.571-26.857 0-33.714 24.286-58.286t58-24.571q26.857 0 48.857 15.714t30.571 40.857l30.286 92 92.571-31.429q12-3.429 24.571-3.429 34.286 0 58.571 22.571t24.286 56.286q0 25.714-17.143 46.571t-42.286 29.429l-89.714 30.857 60 180.571 93.714-32q13.714-4.571 26.286-4.571zM414.286 593.143l177.143-60-60-180-177.143 61.143z"></path>
+        </symbol>
+        <symbol id="icon-rocket" viewBox="0 0 20 20">
+          <title>chat</title>
+          <path class="path1" d="M11.933,13.069c0,0,7.059-5.094,6.276-10.924c-0.017-0.127-0.059-0.213-0.112-0.268c-0.054-0.055-0.137-0.098-0.263-0.115C12.137,0.961,7.16,8.184,7.16,8.184C2.842,7.667,3.156,8.528,1.186,13.26c-0.377,0.902,0.234,1.213,0.904,0.959c0.67-0.252,2.148-0.811,2.148-0.811l2.59,2.648c0,0-0.546,1.514-0.793,2.199c-0.248,0.686,0.055,1.311,0.938,0.926C11.597,17.165,12.439,17.487,11.933,13.069z M12.942,7.153c-0.598-0.613-0.598-1.604,0-2.217c0.598-0.611,1.567-0.611,2.166,0c0.598,0.611,0.598,1.603,0,2.217C14.509,7.764,13.539,7.764,12.942,7.153z"></path>
+        </symbol>
+      </defs>
+    </svg>
+    
+    <header>
+      <nav class="navbar navbar-transparent navbar-default" role="navigation">
+        <div class="container-fluid">
+         <div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-reveal">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+
+  <a class="navbar-brand" href="/">
+    <img alt="logo" src="/static/images/logo3.png" class="logo">
+  </a>
+</div>
+
+<div class="collapse navbar-collapse" id="navbar-reveal">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/classes">Classes &amp; Tutorials</a></li>
+      <li><a href="/services">Services &amp; Consulting</a></li>
+      <li><a href="https://thoughts.spacedojo.com/">Blog</a></li>
+      <li><a href="https://www.patreon.com/meteorclub?ty=c">Community</a></li>
+    </ul>
+</div>
+        </div>
+      </nav>
+    </header>
+    
+    <div class="class-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 about">
+				<h1 class="main">Code Reviews</h1>
+				<h2 class="sub">Save time and improve your apps with this customized monthly service.</h2>
+			</div>
+			<div class="col-sm-4 cta -one-button">
+				<a href="#" data-toggle="modal" data-target=".drip-modal" class="buy-button button"><span class="text">Sign Up</span></a>
+				<span class="info">Sign up to get notified for open slots.</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade drip-modal" tabindex="-1" role="dialog" aria-labelledby="dripModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <form class="drip-form" action="https://www.getdrip.com/forms/6449455/submissions" method="post">
+          <h3 class="drip-headline" data-drip-attribute="headline">Sign up for Code Reviews</h3>
+          <div class="form-group" data-drip-attribute="description">
+            <input type="text" class="form-control" name="fields[full_name]" placeholder="Full Name">
+
+            <input type="email" class="form-control" name="fields[email]" placeholder="Email Address">
+
+            <input type="submit" name="submit" value="Sign Up" class="submit button" data-drip-attribute="sign-up-button">
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+			<div class="class-section">
+				<h3>Code reviews lorem ipsum dolor sit amet.</h3>
+				<p>As you already know, fine tuning your Meteor application is a vital step in your growth cycle. Sometimes it can be simple: turn on Oplog support and add a few backend servers. Other times, you need to go deeper and pick code apart. Ultimately, you may need to take a look at denormalizing, changing your database structure, or adding microservices.</p>
+
+      	<p>Nonetheless, it is vital to set time aside, get baseline measurements, and understand where performance problems may occur&mdash;long before you get that 2 AM email that everything is down. </p>
+			</div>
+
+			<div class="class-section">
+				<h3>Who should use the Code Reviews service?</h3>
+				<p>This service is not for everyone. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+				<div class="well">
+					<h4>Code reviews are perfect for you if:</h4>
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li>You are a small or medium business with a Meteor application running in production.</li>
+									<li>You tried adding app servers, but horizontal scaling didn’t work for you.</li>
+		        			<li>You are ready to grow your user base and take your application to the next level.</li>
+		        		</ul>
+							</div>
+							<div class="col-md-6">
+								<ul>
+									<li>You've read blog posts on how to scale, but are still unsure where to begin.</li>
+									<li>You have slowness issues, but don’t have the know-how or resources to fix the problem.</li>
+									<li>You have a small team of developers that are unable to find the root cause of the slowness.</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+
+			<div class="class-section">
+				<h3>How do you know this will work?</h3>
+				<p>I have over ten years of experience building and optimizing web applications, starting with Ruby on Rails. I've worked with companies such as Words With Friends and GoDaddy. At GoDaddy I was on a team that scaled and reworked the backend in an effort to reduce overall hosting costs. Not only did we reduce costs, we also managed to get the bank syncing job queue from not finishing to running twice a day.</p>
+
+      	<p>More recently, I transitioned into developing with Meteor.js. Still, I continue to help companies optimize their application's performance.</p>
+
+      	<h4>Here's one example...</h4>
+      	<p>One of my clients, <a href="http://worklife.com">WorkLife</a>, is a web and mobile app that helps people run more productive meetings by offering real time collaboration features. Some of their customers include Toyota, Hubspot and Zendesk.</p>
+
+      	<p>As I began optimizing their inner workings for maximum efficiency, I identified that one of their publications had the second highest subscribe rate across the application, with an average response time of 2171ms.</p>
+
+      	<img src="/static/images/wl_response_before.png" style="margin-top: 20px; margin-bottom: 40px" alt="">
+
+      	<p>Essentially, the problem was that WorkLife's database was doing more work than it had to. After identifying the problem in the database, I added a simple line of code to tell the database to add an index. <strong>This small change led to a <em>15X performance increase</em></strong>.</p>
+
+      	<img src="/static/images/wl_response_after.png" style="margin-top: 20px; margin-bottom: 30px" alt="">
+			</div>
+
+			<div class="class-section">
+				<h3>How do we get started?</h3>
+				<p><strong>At the moment, Code Reviews has no open slots.</strong> However, you can sign up below to get on the waiting list and be notified first when slots do become available. I’ll follow up with a few more questions so we can both see if this will be a good fit.</p>
+
+				<div class="buy-button-block">
+					<a href="#" data-toggle="modal" data-target=".drip-modal" class="med-button buy-button button">Sign Up for the Next Course</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- ///////////////////////////////////////////////// -->
+		<!-- SIDEBAR -->
+		<div class="class-sidebar col-sm-12 col-md-12 col-lg-4 col-xl-4">
+			<div class="class-information">
+				<span class="title">How do Code Reviews work?</span>
+				<p class="clean">When you sign up for the Code Reviews monthly service, you get all of these:</p>
+
+				<ul class="whats-included">
+					<li>
+						<strong>Free <a href="http://kadira.io" target="_blank">Kadira</a> Account (Retailed at $50/month)</strong>
+						Meteor’s top performance metric and insight application. I'll help you configure alerts and error tracking.
+					</li>
+					<li>
+						<strong>Monthly Code Review</strong>
+						A comprehensive review that looks at the quality, any security vulnerabilities, etc. of your code base.
+					</li>
+					<li>
+						<strong>Monthly Report</strong>
+						Details that outline <em>where</em> and <em>how</em> your Meteor application’s performance can be improved.
+					</li>
+				</ul>
+
+				<img src="/static/images/metrics3.png" alt="">
+			</div>
+			<div class="class-information">
+				<span class="title">How much does this cost?</span>
+				<p><strong>Code Reviews currently cost $900 per month.</strong> You’ll pay each month up front, before receiving the most recent code review and performance report.</p>
+
+        <p>There is no long term commitment, and you can cancel up to 5 business days before the next month starts. If you have any questions about the code review or pricing, feel free to <a href="mailto:josh@spacedojo.com">contact me.</a></p>
+			</div>
+
+			<div class="about-teacher well">
+	<div class="info">
+		<img src="/static/images/josh.jpg" class="teacher">
+		<span class="name">Josh Owens</span>
+		<span class="twitter"><a href="http://twitter.com/joshowens">@joshowens</a></span>
+	</div>
+	<p class="about">I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months. When I'm not writing, podcasting, or teaching then you can find me running the Cincinnati Meteor meetup or helping people out over Airpair.</p>
+</div>
+		</div>
+	</div>
+</div>
+    <footer>
+  <div class="container-fluid">
+    <div class="text-center">
+      <p>&copy; SpaceDojo &amp; Fourbeansoup, LLC 2015.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script src="static/js/main.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

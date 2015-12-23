@@ -1,0 +1,107 @@
+.well {
+	box-shadow: none;
+	background: none;
+	border-radius: 3px;
+	padding: 29px 35px;
+	margin-bottom: 30px;
+
+	ul { 
+		margin: 10px 0 0 19px; 
+		padding: 0; 
+	}
+
+	ul > li {
+		margin: 0 0 15px 0;
+		line-height: 1.4;
+
+    &:first-child {
+      margin-top: 20px;
+    }
+	}
+
+  &.-fancy-well {
+    border: none;
+    background: #101738;
+    position: relative;
+    padding: 1.5rem 1.6rem 1.5rem 5rem;
+
+    p {
+      color: #DDE1EC;
+      font-size: 1.125rem;
+      line-height: 1.35;
+      font-family: $slab;
+    }
+
+    .icon {
+      position: absolute;
+      top: 34%;
+      left: 1.75rem;
+      width: 2rem;
+      height: 2rem;
+      fill: #A19DD0;
+    }
+  }
+}
+
+.embed-responsive {
+	margin-bottom: 1rem;
+}
+
+a.button {
+  padding: 16px 40px;
+  background: #6b539c;
+  display: inline-block;
+  color: #fff;
+  opacity: 1;
+  font-size: 1.25rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+}
+a.button:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #7d65ad;
+}
+a.button:active {
+  position: relative;
+  top: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.small-button {
+  font-size: .9rem;
+  padding: 13px 25px 12px;
+}
+
+a.med-button {
+  font-size: 1rem;
+  padding: 15px 50px;
+}
+
+a.minimal-button {
+  background: none;
+  border: 1px solid #ccc;
+  color: #6b539c;
+
+  &:hover {
+    background: none;
+    border: 1px solid #6b539c;
+    color: #6b539c;
+  }
+}
+
+.modal-sm {
+  width: 90%;
+
+  .modal-content {
+    padding: 1.825rem;
+  }
+
+  // everything over 768px (tablet screens)
+  @media handheld, screen and (min-width: 768px) {
+    width: 400px;
+    margin-top: 18vh;
+  }
+}

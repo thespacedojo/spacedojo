@@ -1,0 +1,110 @@
+<%- partial("../partials/_email-notification-signup-price-header", { 
+	title: 'Testing Meteor', 
+	subtitle: 'Learn to write a test suite for your Meteor app.',
+	buttonPrice: '$599'
+}) %>
+
+<%- partial("../partials/_drip-form-email-name", {
+	dripActionURL: 'https://www.getdrip.com/forms/3070125/submissions',
+	dripHeadline: 'Sign up to be notified for the next Testing Meteor class.',
+	buttonText: 'Sign Up'
+}) %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+
+			<div class="class-section">
+				<h3>Announcing the Testing Meteor.js class.</h3>
+				<p>Testing your web apps isn't new, but it is brand new for the Meteor.js platform. What if you could learn from the people that built the hot-off-the-presses Velocity framework?</p>
+
+				<p>Introducing the Testing with Meteor.js class. This is your best option to get up to speed with real-world examples of how to build your test suite using Meteor and Velocity.</p>
+
+				<div class="well -fancy-well">
+					<svg class="icon icon-rocket"><use xlink:href="#icon-rocket"></use></svg>
+					<p>Testing Meteor.js is a comprehensive, multi-session online class that walks you through building tests for a Meteor.js app in just 8 hours.</p>
+				</div>
+			</div>
+
+			<div class="class-section">
+				<h3>Not sure how to get started with Velocity?</h3>
+				<p>Velocity is brand new and people are just getting started with it. There aren't a ton of blog posts out yet, and most of those are already out of date. So where do you turn to learn this stuff? There are some quick examples in various frameworks based on the leaderboard example app, but it just doesn't go deep enough yet.</p> 
+			</div>
+
+			<div class="class-section">
+				<h3>Learn from the people building the most reliable test frameworks.</h3>
+				<p>Get the advice and knowledge we wish we could have paid for a year ago, before we started our testing journey. Learn the ins and outs of testing, which frameworks make sense for the types of tests you need, and what types of tests you should have for your app. There will also be a hands-on session where you will use your skills with our guidance.</p>
+			</div>
+
+			<div class="class-section">
+				<h3>So what will you learn in the class?</h3>
+				<p>This comprehensive course is designed to teach you how to test a meteor app from the ground up. Follow along in a fish-bowl style pairing session where you get to listen and watch as the instructors build a test suite for an existing app. Learn by asking questions to understand concepts, and then dive into the material on your own.</p> 
+
+				<div class="well">
+					<h4>Specifically, you will learn:</h4>
+					<ul>
+						<li>The Fundamentals of Testing</li>
+						<li>Test Doubles: Mocks, Stubs, Spies, and Fakes</li>
+						<li>Writing Fixtures</li>
+						<li>Velocity, Frameworks &amp; Plugins, and how to use them</li>
+						<li>Testing Meteor Best Practices</li>
+						<li>How to Test Packages</li>
+						<li>Continuous Integration</li>
+						<li>and more!</li>
+					</ul>
+				</div>
+
+				<p>If you're tired of browsing the web for tutorials or reading through countless Stack Overflow posts to find the exact answer you need, then it's time to start mastering meteor testing.</p>
+			</div>
+
+			<div class="class-section">
+				<h3>Get up to speed testing Meteor in hours.</h3>
+				<p>You want test coverage, and you want it now. Join this online class to get an intimate setting to learn and ask questions about Meteor.js and testing. We are going to keep class sizes small so people can feel comfortable stopping us and asking questions.</p>
+
+				<div class="well -fancy-well">
+					<svg class="icon icon-rocket"><use xlink:href="#icon-rocket"></use></svg>
+					<p>You will understand the core concepts of Testing and Velocity and how to put them to use <strong>building a test suite for your own Meteor app</strong>.</p>
+				</div>
+
+				<p>My goal isn't just to teach you how to test one part of your Meteor app. We want to give you the tools and know-how to build <em>hundreds</em> of tests. This is your chance to gain practical real-world knowledge of Testing Meteor.js.</p>
+
+				<div class="buy-button-block">
+					<a href="#" data-toggle="modal" data-target=".drip-modal" class="med-button buy-button button">Sign Up for the Next Course</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- SIDEBAR -->
+		<div class="class-sidebar col-sm-12 col-md-12 col-lg-4 col-xl-4">
+			<%- partial("../partials/_toc", {
+				tocList: [
+					'The Fundamentals of Testing', 
+					'Test Doubles: Mocks, Stubs, Spies, and Fakes', 
+					'Writing Fixtures',
+					'Velocity, Frameworks &amp; Plugins, and how to use them',
+					'Testing Meteor Best Practices',
+					'How to Test Packages',
+					'Continuous Integration'
+				]
+			}) %>
+
+			<%- partial("../partials/_teacher", {
+				name: "Josh Owens",
+				imageURL: "/static/images/josh.jpg",
+				twitterHandle: "@joshowens",
+				twitterURL: "http://twitter.com/joshowens",
+				about: "I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months. When I'm not writing, podcasting, or teaching then you can find me running the Cincinnati Meteor meetup or helping people out over Airpair."
+			}) %>
+
+			<%- partial("../partials/_teacher", {
+				name: "Sam Hatoum",
+				imageURL: "/static/images/sam.jpg",
+				twitterHandle: "@sam_hatoum",
+				twitterURL: "http://twitter.com/sam_hatoum",
+				about: "Sam is the founding architect behind Velocity, the official testing solution for Meteor 1.0. He is also the author of RTD, the first fully featured testing framework for Meteor which sported unit and acceptance using both Jasmine and Mocha, with end-to-end code coverage, CucumberJS and continuous integration support."
+			}) %>
+		</div>
+		
+	</div>
+</div>

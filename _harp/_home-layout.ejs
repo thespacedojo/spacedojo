@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>SpaceDojo</title>
+    <meta name="description" content="Spacedojo helps you learn to build apps with Javascript.">
+
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <link rel="stylesheet" href="/static/css/fonts.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+
+  <body>
+    <%- partial("/partials/_svgs") %>
+
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <%- partial("/partials/_header-nav") %>
+        </div>
+      </nav>
+    </header>
+
+    <%- yield %>
+    <%- partial("/partials/_footer") %>
+  </body>
+</html>
+
+<%- partial("_header-inside") %>

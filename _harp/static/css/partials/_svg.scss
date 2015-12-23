@@ -1,0 +1,26 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+#about .icon {
+	margin-bottom: 1rem;
+	margin-left: .825rem;
+	width: 6rem;
+	height: 6rem;
+}
+
+#about .icon-learning {
+	fill: #A583B9;
+}
+
+#about .icon-user-chat {
+	fill: #A583B9;
+}
+
+#about .icon-hammer {
+	fill: #A583B9;
+	margin-left: .5rem;
+}

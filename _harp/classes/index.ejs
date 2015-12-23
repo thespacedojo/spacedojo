@@ -1,0 +1,46 @@
+<div class="page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 about">
+				<h1 class="main">Classes</h1>
+				<h2 class="sub">Learn how to build cutting-edge Javascript apps.</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container class-cards">
+	<div class="row">
+		<%- partial("../partials/_class-card", {
+			name: "Mastering Meteor",
+			type: "Pre-Recorded Course",
+			link: '/classes/mastering-meteor',
+			about: "This comprehensive, multi-session online course takes you through the intricacies of building a Meteor app in just 8 hours. Follow along in a fishbowl style pairing session as we build a reactive Twitter clone.",
+			tags: [ 'Meteor', 'Intermediate' ]
+		}) %>
+
+		<%- partial("../partials/_class-card", {
+			name: "Testing Meteor",
+			type: "Live Course",
+			link: '/classes/testing-meteor',
+			about: "An online course that walks you through building tests for a Meteor app in just 8 hours. Get up to speed with real-world examples of how to build your test suite using ChimpJS with Cucumber and Jasmine.",
+			tags: [ 'Meteor', 'Intermediate' ]
+		}) %>
+
+		<%- partial("../partials/_class-card", {
+			name: "8 Days of Meteor",
+			type: "Email Course",
+			link: '/classes/8-days',
+			about: "Go from being a Meteor beginner to a Junior developer in just 8 days with this easy-to-follow email course that helps you build a real Meteor application.",
+			tags: [ 'Meteor', 'Beginner' ]
+		}) %>
+
+		<%- partial("../partials/_class-card", {
+			name: "React + Cordova Mobile Apps",
+			type: "Pre-Recorded Course",
+			link: '/classes/react-cordova',
+			about: "I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months.",
+			tags: [ 'Meteor', 'React', 'Cordova', 'Advanced' ]
+		}) %>
+	</div>
+</div>

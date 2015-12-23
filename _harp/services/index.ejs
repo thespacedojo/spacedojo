@@ -1,0 +1,38 @@
+<div class="page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 about">
+				<h1 class="main">Services</h1>
+				<h2 class="sub">Make your apps the best they can be.</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container services-cards">
+	<div class="row">
+		<%- partial("../partials/_class-card", {
+			name: "Code Reviews",
+			type: "Monthly Service",
+			link: '/services/code-reviews',
+			about: "I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months.",
+			tags: ''
+		}) %>
+
+		<%- partial("../partials/_class-card", {
+			name: "Consulting",
+			type: "Hourly Service",
+			link: '/services/hourly-consulting',
+			about: "I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months.",
+			tags: ''
+		}) %>
+
+		<%- partial("../partials/_class-card", {
+			name: "Project Work",
+			type: "Customized Service",
+			link: '/services/project-work',
+			about: "I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months.",
+			tags: ''
+		}) %>
+	</div>
+</div>

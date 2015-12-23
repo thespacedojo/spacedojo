@@ -1,0 +1,105 @@
+.page-title {
+	min-height: 350px;
+	padding: 12rem 0 7rem;
+	background-color: #0D112A;
+	background-image: url('/static/images/space/space4.jpg');
+	background-position: 50% 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	margin-bottom: 3rem;
+	
+	@media handheld, screen and (min-width: 992px) {
+		margin-bottom: 6rem;
+	}
+
+	.about > h1.main {
+		margin: 0 0 .25rem 0;
+		color: #fff;
+	}
+
+	.about > h2.sub {
+		font-family: $slab;
+		font-weight: 400;
+		opacity: .6;
+		color: #fff;
+	}
+
+	.button {
+		font-size: 1rem;
+		position: relative;
+		text-align: center;
+
+		@media handheld, screen and (min-width: 768px) {
+			display: inline-block;
+			min-width: 207px;
+			font-size: .9rem;
+
+			&.buy-button {
+				width: 38%;
+				margin-right: .5rem;
+			}
+		}
+		@media handheld, screen and (min-width: 992px) {
+			font-size: .9rem;
+			display: block;
+			width: 90%;
+			margin: 0 auto 0;
+			margin-bottom: .5rem;
+
+			&.buy-button {
+				width: 90%;
+				margin-right: auto;
+			}
+		}
+		@media handheld, screen and (min-width: 1200px) {
+			font-size: 1rem;
+		}
+	}
+}
+
+.inline-badge {
+	font-weight: 800;
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: .75rem;
+	color: #4d4e78;
+	background-color: lighten(#b6b9d6, 17%);
+  padding: 3px 6px;
+	margin: 0 0 0 2px;
+	border-radius: 2px;
+}
+
+.dojo-card {
+	padding: 1.6rem 1.65rem 1.2rem;
+	
+	h3.name {
+		font-size: 1.6rem;
+		margin-bottom: .2rem;
+		line-height: 1.2;
+		color: #333;
+	}
+
+	p.about {
+		font-size: .9rem;
+		margin-bottom: 1rem;
+	}
+
+	span.type {
+		font-size: .9rem;
+		display: block;
+		font-family: $slab;
+		padding-bottom: .7rem;
+		margin-bottom: .7rem;
+		border-bottom: 2px solid #eee;
+		color: rgba(0,0,0,.5);
+	}
+
+	&:hover { 
+		border-color: #C9A7DD;
+	}
+}
+
+.card-anchor {
+	text-decoration: none !important;
+	&:hover { text-decoration: none !important; }
+}

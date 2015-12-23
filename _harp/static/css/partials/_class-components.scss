@@ -1,0 +1,256 @@
+/* CLASS PAGE TITLES */
+.class-title {
+	@extend .page-title;
+	background-image: url('/static/images/space/space6.jpg');
+	background-position: 50% 100%;
+
+	.try-button {
+		background: none;
+		border: 1px solid rgba(255,255,255,.3);
+		color: lighten(#b6b9d6, 10%);
+
+		&:hover {
+			background: none;
+			border: 1px solid lighten(#6b539c, 4%);
+		}
+	}
+
+	.incl-price > .text {
+		display: block;
+		width: 68%;
+	}
+
+	.incl-price > .price {
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: darken(#6b539c, 4%);
+		padding: 16px 22px;
+		width: 28%;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
+
+	.cta {
+		@media handheld, screen and (min-width: 992px) {
+			padding-left: 25px;
+			text-align: center;
+		}
+		
+		.info { 
+			margin-bottom: 10px; 
+			font-size: .8rem;
+			opacity: .75;
+			color: lighten(#b6b9d6, 10%);
+		}
+
+		&.-one-button {
+			padding-top: 25px;
+		}
+	}
+}
+
+
+/* Content sections for class/service pages */
+.class-section {
+	margin: 0 1.15rem 2rem 0;
+
+	&.-compact-bottom { 
+		margin: 0 1.15rem 3.5rem 0; 
+	}
+
+	@media handheld, screen and (min-width: 992px) {
+		margin: 0 1.15rem 5rem 0;
+		&:last-child {
+			margin-bottom: 10rem;
+		}
+	}
+
+	.try-button-block, .buy-button-block {
+		text-align: center;
+	}
+
+	.buy-button-block .try-button {
+		@extend .minimal-button;
+	}
+
+	.media-row {
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.well { border-color: lighten(#6B519E, 35%); }
+	.well > h4 {
+		color: lighten(#6B519E, 5%);
+	}
+}
+
+
+/* Class Sidebar */
+.class-sidebar {
+	margin-bottom: 5rem;
+	@media handheld, screen and (min-width: 992px) {
+		padding-left: 25px;
+	}
+}
+
+/* INFO-SECTIONS FOR SIDEBARS */
+.class-information, .service-information {
+	margin: 0 0 1.5rem 0;
+	padding: 15px 28px;
+	background: #f4f4f4;
+	border-radius: 3px;
+	
+	.toc {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		font-family: $slab;
+	}
+
+	p {
+		font-size: .9rem;
+		margin-bottom: 1.3rem;
+	}
+
+	.title {
+		@extend .toc;
+		font-weight: 800;
+		display: block;
+		text-transform: capitalize;
+		border-bottom: 2px solid #ddd;
+		padding-bottom: .3rem;
+		margin: .5rem 0 1.3rem 0;
+		font-size: 1rem;
+	}
+
+	.toc > li {
+		font-size: 0.9rem;
+		margin-bottom: 1.1rem;
+		line-height: 1.4;
+	}
+
+	.toc > li .sample {
+		@extend .inline-badge;
+	}
+
+	ul.whats-included {
+		margin: 20px 0 0 20px;
+		padding: 0;
+		font-size: .9rem;
+
+		strong { 
+			display: block; 
+			line-height: 1.2; 
+			margin-bottom: .2rem;
+		}
+
+		li { 
+			margin-bottom: 1rem; 
+			&:last-child { margin-bottom: 0; }
+		}
+	}
+}
+
+
+/* ABOUT THE TEACHER 
+   Box with Name, Twitter, and Paragraph */
+.about-teacher {
+	margin: 30px 0 0 0;
+	font-size: 0.75rem;
+
+	.info {
+		display: block;
+		clear: both;
+	}
+
+	.info > .name {
+		font-size: 1.25rem;
+		font-weight: 800;
+		font-family: $slab;
+	}
+
+	.info > .twitter {
+		display: block;
+		font-size: .875rem;
+		margin: 0 0 1rem 0;
+	}
+
+	.info > .teacher {
+		width: 68px;
+		height: 68px;
+		float: right;
+		margin: 0 0 10px 10px;
+		border-radius: 50px;
+	}
+
+	.about {
+		font-size: .9rem;
+		line-height: 1.6;
+		display: block;
+	}
+}
+
+/* DRIP FORM
+   Modal styles */
+
+.drip-modal {
+	border-radius: 2px !important;
+	.modal-header {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	h3.drip-headline {
+		line-height: 1.1;
+		margin-bottom: 1.75rem;
+		text-align: center;
+	}
+	input {
+		margin-bottom: 1rem;
+	}
+	input[type=text], input[type=email] {
+		padding: 13px 14px 12px;
+		font-size: .9rem;
+		height: 45px !important;
+	}
+	input[type=submit] {
+		@extend a.button;
+		@extend a.small-button;
+		display: block;
+		box-shadow: none;
+		border: none;
+		width: 100%;
+	}
+}
+
+/* CLASS CARDS
+   Box with class information for /classes page */
+.class-cards {
+	margin-bottom: 5rem;
+}
+.class-card {
+	@extend .dojo-card;
+
+	.tags {
+		position: relative;
+	}
+
+	.tags > .inline-badge {
+		text-transform: capitalize;
+		padding: 4px 9px;
+		margin: 0 0 .45rem 0;
+	}
+}
+
+
+/* SERVICES CARDS
+   Box with services information */
+.services-cards {
+	margin-bottom: 5rem;
+}
+.services-card {
+	@extend .dojo-card;
+}
+

@@ -1,0 +1,17 @@
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">	
+	<a href="<%- link %>" class="card-anchor">
+		<div class="class-card well">
+			<h3 class="name"><%- name %></h3>
+			<span class="type"><%- type %></span>
+			<p class="about"><%- about %></p>
+			
+			<% if (tags.length > 0) { %>
+				<div class="tags">
+					<% for(var i=0; i<tags.length; i++) { %>
+						<span class="inline-badge"><%- tags[i] %></span>
+					<% } %>
+				</div>
+			<% } %>
+		</div>
+	</a>
+</div>
