@@ -2,7 +2,6 @@
 .class-title {
 	@extend .page-title;
 	background-image: url('/static/images/space/space6.jpg');
-	background-position: 50% 100%;
 
 	.try-button {
 		background: none;
@@ -53,7 +52,7 @@
 
 /* Content sections for class/service pages */
 .class-section {
-	margin: 0 1.15rem 2rem 0;
+	margin: 0 0 2rem 0;
 
 	&.-compact-bottom { 
 		margin: 0 1.15rem 3.5rem 0; 
@@ -70,6 +69,13 @@
 		text-align: center;
 	}
 
+	.try-button-block .try-button {
+		@extend .green-button;
+	}
+
+	.buy-button-block .buy-button {
+		@extend .green-button;
+	}
 	.buy-button-block .try-button {
 		@extend .minimal-button;
 	}

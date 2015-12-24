@@ -80,6 +80,12 @@ a.med-button {
   padding: 15px 50px;
 }
 
+a.green-button {
+  background: #24A522;
+  &:hover {
+    background: lighten(#24A522, 3%)
+  }
+}
 a.minimal-button {
   background: none;
   border: 1px solid #ccc;

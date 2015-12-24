@@ -28,15 +28,14 @@ img {
   padding: 0;
   background-color: #0D112A;
   background-image: url("../../static/images/space/space5.jpg");
-  background-size: cover;
-  background-position: 50% 100%;
-  background-attachment: fixed;
-  margin: 0px 0 100px 0;
+  background-size: 500%;
+  background-position: 50% 0%;
+  margin: 0 0 50px 0;
   text-align: center;
   
   .container {
-    padding-top: 180px;
-    padding-bottom: 150px;
+    padding-top: 130px;
+    padding-bottom: 70px;
   }
 
   .primary-button {
@@ -46,20 +45,36 @@ img {
 
   h1.title {
     font-weight: 300;
-    font-size: 5rem;
+    font-size: 2.3rem;
     line-height: 1.1;
     color: #fff;
 
     strong { font-weight: 500; }
   }
+
+  @media handheld, screen and (min-width: 768px) {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 100%;
+    
+    h1.title{ font-size: 5rem; }
+    
+    .container {
+      padding-top: 180px;
+      padding-bottom: 150px;
+    }
+  }
 }
 
 #about {
-  margin: 80px 0 90px;
+  margin: 10px 0 10px;
   // everything over 992px (medium screens)
   @media handheld, screen and (min-width: 992px) {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 80px 100px 90px 100px;
+  }
+
+  .row > .col-sm-12 {
+    margin-bottom: 5rem;
   }
 
   button {
@@ -69,12 +84,65 @@ img {
 
 footer {
   width: 100%;
-  background-color: #f4f4f4;
-  height: 55px;
-  padding-top: 18px;
+  background-color: #eee;
+  padding: 50px 0 10px;
+
+  .footer-content {
+    span {
+      text-transform: uppercase;
+      font-size: .75rem;
+      color: #aaa;
+      letter-spacing: .01rem;
+      display: block;
+      margin-bottom: .5rem;
+    }
+    
+    .grayscale-img {
+      opacity: 1;
+      width: 98%;
+      &:hover {
+        filter: grayscale(100%);
+        opacity: .3;
+      }
+    }
+
+    .slack {
+      width: 80%;
+      margin-top: .25rem;
+    }
+    .patreon { 
+      margin-top: .36rem; 
+    }
+
+    h3 { font-weight: 300; line-height: 1.3; }
+    p { font-size: .825rem; }
+  }
+  
+  .copyright {
+    padding-top: 40px;
+  }
+  .copyright p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    opacity: 0.4;
+  }
 }
-footer p {
-  font-size: 13px;
-  margin-bottom: 10px;
-  opacity: 0.6;
+
+.email-footer {
+  text-align: center; 
+  padding: 65px 0 60px; 
+  background-color: lighten(#0D112A, 2%);
+
+  h2.email {
+    font-weight: 300; 
+    color: #eee;
+    font-size: 1.6rem;
+    strong { font-weight: 500; }
+    a { color: lighten(#A682BA, 5%); }
+  }
+
+  // everything over 768px (tablet screens)
+  @media handheld, screen and (min-width: 768px) {
+    h2.email { font-size: 2rem; }
+  }
 }

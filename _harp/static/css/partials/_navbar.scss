@@ -1,12 +1,16 @@
-// convert font sizes to rem using offroad code calculator
-
 .navbar, .navbar-default {
-  height: 90px;
+  height: 70px;
   padding-top: 6px;
+  z-index: 1 !important;
+
+  // everything over 768px (tablet screens)
+  @media handheld, screen and (min-width: 768px) {
+    height: 90px;
+  }
 }
 
 .navbar {
-  background: transparent;
+  background: #0D112A;
   font-family: $sans-serif;
   text-transform: lowercase;
   font-weight: 700;
@@ -19,7 +23,8 @@
   left: 0;
 
   .navbar-toggle { 
-    top: 7px; 
+    top: 5px; 
+    border: none;
   }
 
   /* BRAND // Primary styles */
@@ -35,6 +40,7 @@
 
   /* BRAND // For bigger screens */
   @media screen and (min-width: 768px) {
+    background: transparent;
     .navbar-brand {
       margin: 20px 0 0;
     }
@@ -72,21 +78,35 @@
 .navbar-collapse {
   border: none;
   z-index: 9999999999;
-  display: block;
-  border: none;
 
   .nav {
-    background: #f2f2f2;
+    background: #0D112A;
     border: none;
     margin-top: 0;
     padding: 0;
   }
-
   .nav a {
     margin: 0 0 10px 0;
   }
 
+  // mobile specific
+  @media screen and (max-width: 768px) {
+    .nav { 
+      height: 80vh; 
+      width: 100vw;
+      padding-top: 2rem;
+    }
+
+    .nav a {
+      font-size: 1.75rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  // tablet and larger
   @media screen and (min-width: 768px) {
+    display: block;
     .nav {
       background: transparent;
       margin-top: 20px;
@@ -95,16 +115,19 @@
 }
 
 .navbar-transparent {
-  background: transparent;
+  background: #0D112A;
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
 
-  &::after {
-    border-bottom: 2px solid rgba(215,199,224,.1);
-    width: 94%;
-    margin: .6rem auto 0;
+  @media handheld, screen and (min-width: 768px) {
+    background: transparent;
+    &::after {
+      border-bottom: 2px solid rgba(215,199,224,.1);
+      width: 94%;
+      margin: .6rem auto 0;
+    }
   }
 }
 
