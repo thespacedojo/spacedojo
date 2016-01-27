@@ -15,23 +15,29 @@
   </div>
 </div>
 
+<%- partial("/partials/_email-subscribe-bar", {
+  // dripActionURL: 'https://www.getdrip.com/forms/3428480/submissions',
+  dripHeadline: 'Get the <strong>best tips and tricks</strong> delivered weekly to your inbox.',
+  buttonText: 'Subscribe'
+}) %>
+
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-12 col-md-4 col-lg-4 text-center">
       <svg class="icon icon-learning"><use xlink:href="#icon-learning"></use></svg>
-      <h3>Learning Resources</h3>
+      <h3 class="title">Learning Resources</h3>
       <p>Find tutorials, pre-recorded classes, and live workshops on Javascript topics such as Meteor, React, Cordova, and more!</p>
       <a class="minimal-button small-button button" href="/classes">See the Classes</a>
     </div>
     <div class="col-sm-12 col-md-4 col-lg-4 text-center">
       <svg class="icon icon-hammer"><use xlink:href="#icon-hammer"></use></svg>
-      <h3>Customized Services</h3>
+      <h3 class="title">Customized Services</h3>
       <p>Whether you need code reviews, one-on-one consulting, or someone contracted to build your app, Spacedojo has you covered.</p>
       <a class="minimal-button small-button button" href="/services">Browse our Services</a>
     </div>
     <div class="col-sm-12 col-md-4 col-lg-4 text-center">
       <svg class="icon icon-user-chat"><use xlink:href="#icon-user-chat"></use></svg>
-      <h3>Active Community</h3>
+      <h3 class="title">Active Community</h3>
       <p>Our community is open and welcoming to beginners and experts alike. Members can ask questions, network, and even make friends.</p>
       <!-- TODO: Do you want this to link to Patreon? Or maybe just Crater.io? -->
       <a class="minimal-button small-button button" href="https://www.patreon.com/meteorclub?ty=c">Join the Community</a>

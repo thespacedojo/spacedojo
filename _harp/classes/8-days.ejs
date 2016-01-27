@@ -1,7 +1,8 @@
 <%- partial("../partials/_buy-try-header", { 
 	title: '8 Days of Meteor', 
 	subtitle: 'Stop dabbling and truly learn Meteor in 8 days.',
-	buttonPrice: '$15+' 
+	buttonPrice: '$15+',
+	linkTo: '#purchase-scroll'
 }) %>
 
 <%- partial("../partials/_drip-form-email-name", {
@@ -102,9 +103,48 @@
 
 				<p>Ultimately, the goal is to give you the tools necessary to learn hands-on by applying the lessons to building a Meteor app. This course will take you from being a Meteor beginner to a Junior developer!</p>
 
-				<div class="row">
-			    <!-- TODO: PRICING TABLE GOES HERE -->
-		    </div>
+				<div id="purchase-scroll"></div>
+				<!-- PRICING TABLE -->
+				<%- partial("../partials/_purchase-tiers", {
+					buyFreq: ' one time', // or '/mo' or '/yr' etc. applies to all tiers
+
+					/* TIER ONE */
+					tierOne: 'Basic',
+					tierOneDescription: 'Just the basic email course with no extras.', // I recommend keeping descriptions under 52 characters.
+					tierOneBuyLink: '#', // link this to a gumroad modal or something?
+					tierOnePrice: '$15',
+					tierOneIncluded: [
+														'8 days of email'
+													 ],
+					tierOneExcluded: [
+														'A codebase of solutions', 
+														'Videos of building the app'
+													 ],
+					
+					/* TIER TWO */
+					tierTwo: 'Code',
+					tierTwoDescription: 'Get an entire codebase to browse and review.',
+					tierTwoBuyLink: '#', // link this to a gumroad modal or something?
+					tierTwoPrice: '$35',
+					tierTwoIncluded: [
+														'8 days of email', 
+														'A codebase of solutions'
+													 ],
+					tierTwoExcluded: [
+														'Videos of building the app'
+													 ],
+					
+					/* TIER THREE */
+					tierThree: 'Video',
+					tierThreeDescription: 'Get comprehensive videos along with everything else.',
+					tierThreeBuyLink: '#', // link this to a gumroad modal or something?
+					tierThreePrice: '$75',
+					tierThreeIncluded: [
+															'8 days of email', 
+															'A codebase of solutions', 
+															'Videos of building the app'
+														 ],
+				}) %>
 			</div>
 		</div>
 

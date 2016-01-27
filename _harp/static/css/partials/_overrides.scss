@@ -111,3 +111,13 @@ a.minimal-button {
     margin-top: 18vh;
   }
 }
+
+.row.-no-gutter {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.-no-gutter > [class^="col-"],
+.row.-no-gutter > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

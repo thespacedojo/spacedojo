@@ -30,7 +30,7 @@ img {
   background-image: url("../../static/images/space/space5.jpg");
   background-size: 500%;
   background-position: 50% 0%;
-  margin: 0 0 50px 0;
+  margin: 0;
   text-align: center;
   
   .container {
@@ -71,6 +71,10 @@ img {
   // everything over 992px (medium screens)
   @media handheld, screen and (min-width: 992px) {
     margin: 80px 100px 90px 100px;
+  }
+
+  h3.title {
+    color: darken(#6B519E, 20%);
   }
 
   .row > .col-sm-12 {
@@ -144,5 +148,12 @@ footer {
   // everything over 768px (tablet screens)
   @media handheld, screen and (min-width: 768px) {
     h2.email { font-size: 2rem; }
+  }
+}
+
+
+.btn {
+  &.full-width {
+    width: 100%;
   }
 }

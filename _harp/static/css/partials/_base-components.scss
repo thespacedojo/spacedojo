@@ -118,3 +118,47 @@
 	text-decoration: none !important;
 	&:hover { text-decoration: none !important; }
 }
+
+.email-subscribe {
+	padding: 45px 0 50px; 
+  background-color: #eee;
+  text-align: center;
+
+  h2.headline {
+  	font-weight: 300;
+  	color: darken(#6B519E, 20%);
+  	margin-bottom: 1.3rem;
+  }
+
+  h2.headline strong {
+  	font-weight: 500;
+  }
+
+  input.form-control, button.btn-submit {
+  	height: 50px;
+  	box-shadow: none;
+  	border: 1px solid white;
+  	font-size: 1rem;
+  	font-weight: 400;
+
+  	&:focus {
+  		border: 1px solid #6b539c;
+  		outline: none;
+  	}
+  }
+
+  input.form-control {
+  	padding-left: 18px;
+  }
+
+  button.btn-submit {
+  	background-color: #6b539c;
+  	border: 1px solid #6b539c;
+  	color: white;
+  	font-weight: 600;
+
+  	&:focus {
+  		border: 1px solid darken(#6b539c, 25%);
+  	}
+  }
+}

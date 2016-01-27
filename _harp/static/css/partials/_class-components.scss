@@ -86,12 +86,216 @@
 		border-bottom: 1px solid #ddd;
 	}
 
+	.media-object {
+		width: 50%;
+		margin: 0 auto 1rem;
+
+		@media handheld, screen and (min-width: 768px) {
+			width: 100%;
+		}
+	}
+
 	.well { border-color: lighten(#6B519E, 35%); }
 	.well > h4 {
 		color: lighten(#6B519E, 5%);
 	}
 }
 
+
+/* Purchase Tiers */
+.purchase-tiers {
+	margin-top: 4rem;
+
+	.option {
+		border: 2px solid darken(#6B519E, 7%);
+		padding: 0 0 15px;
+		text-align: center;
+		position: relative;
+		min-height: 370px;
+		margin-bottom: 1rem;
+		border-radius: 5px;
+		
+		&:first-child { 
+			h4.name { color: darken(#A8A2D0, 12%); }
+			span.price { background: darken(#A8A2D0, 12%); }
+
+			.tier { border-top-left-radius: 5px; }
+		}
+		&:last-child { 
+			.tier { border-top-right-radius: 5px; }
+		}
+		
+		&.-preferred {
+			h4.name { color: darken(#A99CCD, 16%); }
+			span.price { background: darken(#A99CCD, 16%); }
+			overflow: hidden;
+		}
+
+		.tier {
+			background-color: #f4f4f4;
+			padding: 26px 0 4px;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+
+		h4.name {
+			font-size: 2rem;
+			font-weight: 600;
+			margin: .65rem 0 0;
+			padding: 0;
+			line-height: 1;
+			color: darken(#6B519E, 5%);
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+		
+		span.price {
+			background: #6B519E;
+			color: white;
+			padding: 9px 15px;
+			font-size: 1.75rem;
+			border-radius: 3px;
+			margin-top: .5rem;
+			display: inline-block;
+			width: 88%;
+			font-weight: 500;
+			font-family: $slab;
+
+			small {
+				font-size: 1.25rem;
+				opacity: .75;
+				letter-spacing: .03rem;
+			}
+		}
+
+		span.sign-up {
+			margin-top: 1.5rem;
+			display: inline-block;
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			font-weight: 600;
+			letter-spacing: .02rem;
+			opacity: .5;
+		}
+
+		span.preferred {
+			font-family: $sans-serif;
+			background: #A3B6DE;
+			transform: rotate(-45deg);
+			color: white;
+			position: absolute;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: .8rem;
+			letter-spacing: .03rem;
+			margin: 0 auto;
+			top: 24px;
+			left: -25%;
+			width: 75%;
+			padding: 4px 0;
+		}
+		.icon-preferred, .icon-cup {
+			margin: 0 auto;
+			position: relative;
+			top: 3px;
+			right: 4px;
+			font-size: 1.15rem;
+		}
+	}
+
+	.option:hover {
+		cursor: pointer;
+		h4.name { color: darken(#A682BA, 12%); }
+		span.price { background: darken(#A682BA, 12%); }
+	}
+
+	.option .included-list {
+		list-style-type: none;
+		margin: 0;
+		font-family: $slab;
+
+		li {
+			padding: 8px 0px;
+			margin: 0 15px;
+			// font-size: 0.8rem;
+			line-height: 1.4;
+		  border-bottom: 1px solid #eee;
+		}
+
+		li:last-child {
+			border: none;
+		}
+
+		li.deselected {
+			color: #ccc;
+			text-decoration: line-through;
+		}
+
+		li.title {
+			font-weight: 400;
+			border: none;
+			font-family: $sans-serif;
+			font-size: .9rem;
+			line-height: 1.2;
+			opacity: .7;
+			padding: 0 6px 25px;
+			margin: 0 0 15px;
+			background: #f4f4f4;
+		}
+	}
+
+	@media handheld, screen and (min-width: 768px) {
+		.option span.preferred {
+			top: 24px;
+			left: -40px;
+			width: 75%;
+		}
+
+		.option {
+			border-radius: 0;
+			&:first-child { 
+				border-right: none; 
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+
+				.tier { border-top-left-radius: 5px; }
+			}
+			&:last-child { 
+				border-left: none; 
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+
+				.tier { border-top-right-radius: 5px; }
+			}
+		}
+	}
+
+	// everything over 992px (medium screens)
+	@media handheld, screen and (min-width: 992px) {
+		.option span.preferred {
+			top: 20px;
+			left: -40px;
+			width: 75%;
+		}
+	}
+	@media handheld, screen and (min-width: 1200px) {
+		.option .included-list li {
+			padding: 8px 12px;
+			font-size: .9rem;
+
+			&.title {
+				padding: 0 20px 25px;
+				font-size: 1rem;
+			}
+		}
+
+		.option span.preferred {
+			top: 24px;
+			left: -50px;
+			width: 75%;
+		}
+	}
+}
 
 /* Class Sidebar */
 .class-sidebar {
