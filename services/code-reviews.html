@@ -57,10 +57,10 @@
         <symbol id="icon-cup" viewBox="0 0 24 24">
           <rect fill="none" width="24" height="24"/>
           <path d="M21,3h-3.278C17.375,2.405,16.737,2,16,2H8C7.263,2,6.625,2.405,6.278,3H3C2.448,3,2,3.448,2,4v3.04c0,0.915,0.41,1.77,1.126,2.342l4.178,3.342C8.207,13.859,9.51,14.659,11,14.91V17H9c-0.552,0-1,0.448-1,1v2H7v2h2h6h2v-2h-1v-2c0-0.552-0.448-1-1-1h-2v-2.09c1.49-0.251,2.793-1.05,3.696-2.186l4.179-3.343C21.59,8.809,22,7.955,22,7.04V4C22,3.448,21.552,3,21,3z M14,20h-4v-1h4V20z M4.376,7.821C4.137,7.63,4,7.344,4,7.04V5h2v4c0,0.042,0.005,0.083,0.006,0.125L4.376,7.821z M12,13c-2.206,0-4-1.794-4-4V4h8v5C16,11.206,14.206,13,12,13z M20,7.04c0,0.304-0.137,0.59-0.375,0.781l-1.631,1.305C17.995,9.083,18,9.042,18,9V5h2V7.04z"/>
-        </symbol> 
+        </symbol>
       </defs>
     </svg>
-    
+
     <header>
       <nav class="navbar navbar-transparent navbar-default" role="navigation">
         <div class="container-fluid">
@@ -88,20 +88,20 @@
         </div>
       </nav>
     </header>
-    
+
     <div class="class-title">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12 col-md-10 col-lg-8 about">
-				<h1 class="main">Code Reviews</h1>
-				<h2 class="sub">Save time and improve your apps with this customized monthly service.</h2>
-			</div>
-			<div class="col-sm-12 col-md-5 col-lg-4 cta -one-button">
-				<a href="#" data-toggle="modal" data-target=".drip-modal" class="buy-button button"><span class="text">Sign Up</span></a>
-				<span class="info">Sign up to get notified for open slots.</span>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-10 col-lg-8 about">
+        <h1 class="main">Code Reviews</h1>
+        <h2 class="sub">Save time and improve your app with this personal code review service.</h2>
+      </div>
+      <div class="col-sm-12 col-md-5 col-lg-4 cta -one-button">
+        <a href="#" data-toggle="modal" data-target=".drip-modal" class="buy-button button"><span class="text">Sign Up</span></a>
+        <span class="info">Sign up to get notified for open slots.</span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal fade drip-modal" tabindex="-1" role="dialog" aria-labelledby="dripModal">
@@ -116,6 +116,7 @@
             <input type="text" class="form-control" name="fields[full_name]" placeholder="Full Name">
 
             <input type="email" class="form-control" name="fields[email]" placeholder="Email Address">
+            <input type="text" class="form-control" name="fields[company_name]" value="" placeholder="Company Name"/>
 
             <input type="submit" name="submit" value="Sign Up" class="submit button" data-drip-attribute="sign-up-button">
           </div>
@@ -127,130 +128,136 @@
 
 
 <div class="container">
-	<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
-			<div class="class-section">
-				<h3>Code reviews lorem ipsum dolor sit amet.</h3>
-				<p>As you already know, fine tuning your Meteor application is a vital step in your growth cycle. Sometimes it can be simple: turn on Oplog support and add a few backend servers. Other times, you need to go deeper and pick code apart. Ultimately, you may need to take a look at denormalizing, changing your database structure, or adding microservices.</p>
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+      <div class="class-section">
+        <h3>Code reviews are vital for your developer team growth.</h3>
 
-      	<p>Nonetheless, it is vital to set time aside, get baseline measurements, and understand where performance problems may occur&mdash;long before you get that 2 AM email that everything is down. </p>
-			</div>
+        <p>Code reviews are vital to the health of your application. They bring in fresh eyes to look at the bits of code you are writing from day to day. These new eyes work best when they don't even 100% understand your application, because they can question the underlying assumptions the code might make, driving out potential bugs, security holes, or performance issues. At Spacedojo, our aim is to help people create clean, clear, concise code that does what it needs to do without exposing sensitive data or creating performance issues.</p>
 
-			<div class="class-section">
-				<h3>Who should use the Code Reviews service?</h3>
-				<p>This service is not for everyone. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Javascript apps, particularly things like Meteor.js and Feathers.js, bring new code creation paradigms to the forefront. These new paradigms can be innovative, but also troublesome when you are diving deeper into how to build these Javascript applications.</p>
+      </div>
 
-				<div class="well">
-					<h4>Code reviews are perfect for you if:</h4>
-						<div class="row">
-							<div class="col-md-6">
-								<ul>
-									<li>You are a small or medium business with a Meteor application running in production.</li>
-									<li>You tried adding app servers, but horizontal scaling didn’t work for you.</li>
-		        			<li>You are ready to grow your user base and take your application to the next level.</li>
-		        		</ul>
-							</div>
-							<div class="col-md-6">
-								<ul>
-									<li>You've read blog posts on how to scale, but are still unsure where to begin.</li>
-									<li>You have slowness issues, but don’t have the know-how or resources to fix the problem.</li>
-									<li>You have a small team of developers that are unable to find the root cause of the slowness.</li>
-								</ul>
-							</div>
-						</div>
-				</div>
-			</div>
+      <div class="class-section">
+        <h3>Who should use the Code Reviews service?</h3>
+        <p>This service is not for everyone. It is designed for serious businesses or developers that are looking to up their game.</p>
 
-			<div class="class-section">
-				<h3>How do you know this will work?</h3>
-				<p>I have over ten years of experience building and optimizing web applications, starting with Ruby on Rails. I've worked with companies such as Words With Friends and GoDaddy. At GoDaddy I was on a team that scaled and reworked the backend in an effort to reduce overall hosting costs. Not only did we reduce costs, we also managed to get the bank syncing job queue from not finishing to running twice a day.</p>
+        <div class="well">
+          <h4>Code reviews are perfect for you if:</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <ul>
+                  <li>You are a small or medium business with a Meteor application running in production.</li>
+                  <li>You tried adding app servers, but horizontal scaling didn’t work for you.</li>
+                  <li>You are getting ready to launch your app, but you are worried about security.</li>
+                  <li>You want to make sure your developers are building what you want.</li>
+                  <li>You are ready to grow your user base and take your application to the next level.</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul>
+                  <li>You've read blog posts on how to scale or secure your application, but are still unsure where to begin.</li>
+                  <li>You have slowness issues, but don’t have the know-how or resources to fix the problem.</li>
+                  <li>You have customer data and you worry you might be exposing it to the world.</li>
+                  <li>You have a small team of developers that are unable to find the root cause of the slowness.</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
 
-      	<p>More recently, I transitioned into developing with Meteor.js. Still, I continue to help companies optimize their application's performance.</p>
+      <div class="class-section">
+        <h3>How do you know this will work?</h3>
+        <p>I have over ten years of experience building and optimizing web applications, starting with Ruby on Rails. I've worked with companies such as Words With Friends and GoDaddy. At GoDaddy I was on a team that scaled and reworked the backend in an effort to reduce overall hosting costs. Not only did we reduce costs, we also managed to get the bank syncing job queue from not finishing to running twice a day.</p>
 
-      	<h4>Here's one example...</h4>
-      	<p>One of my clients, <a href="http://worklife.com">WorkLife</a>, is a web and mobile app that helps people run more productive meetings by offering real time collaboration features. Some of their customers include Toyota, Hubspot and Zendesk.</p>
+        <p>More recently, I transitioned into developing with Meteor.js. Still, I continue to help companies optimize their application's performance.</p>
 
-      	<p>As I began optimizing their inner workings for maximum efficiency, I identified that one of their publications had the second highest subscribe rate across the application, with an average response time of 2171ms.</p>
+        <h4>Here's one example...</h4>
+        <p>One of our clients, <a href="http://worklife.com">WorkLife</a>, is a web and mobile app that helps people run more productive meetings by offering real time collaboration features. Some of their customers include Toyota, Hubspot and Zendesk.</p>
 
-      	<img src="/static/images/wl_response_before.png" style="margin-top: 20px; margin-bottom: 40px" alt="">
+        <p>As we began optimizing their app inner workings for maximum efficiency, we identified that one of their publications had the second highest subscribe rate across the application, with an average response time of 2171ms.</p>
 
-      	<p>Essentially, the problem was that WorkLife's database was doing more work than it had to. After identifying the problem in the database, I added a simple line of code to tell the database to add an index. <strong>This small change led to a <em>15X performance increase</em></strong>.</p>
+        <img src="/static/images/wl_response_before.png" style="margin-top: 20px; margin-bottom: 40px" alt="">
 
-      	<img src="/static/images/wl_response_after.png" style="margin-top: 20px; margin-bottom: 30px" alt="">
-			</div>
+        <p>Essentially, the problem was that WorkLife's database was doing more work than it had to. After identifying the problem in the database, I added a simple line of code to tell the database to add an index. <strong>This small change led to a <em>15X performance increase</em></strong>. We found this problem in the first few minutes of the code review.</p>
 
-			<div class="class-section">
-				<h3>How do we get started?</h3>
-				<p><strong>At the moment, Code Reviews has no open slots.</strong> However, you can sign up below to get on the waiting list and be notified first when slots do become available. I’ll follow up with a few more questions so we can both see if this will be a good fit.</p>
+        <img src="/static/images/wl_response_after.png" style="margin-top: 20px; margin-bottom: 30px" alt="">
 
-				<div class="buy-button-block">
-					<a href="#" data-toggle="modal" data-target=".drip-modal" class="med-button buy-button button">Sign Up for the Next Course</a>
-				</div>
-			</div>
-		</div>
+        <p>Our comprehensive code review turned up numerous issues that both our team and the WorkLife team worked together to fix, these included other security and best practice issues. Even when you hire the top devs, a code review can reveal things that need fixed.</p>
+      </div>
 
-		<!-- ///////////////////////////////////////////////// -->
-		<!-- SIDEBAR -->
-		<div class="class-sidebar col-sm-12 col-md-12 col-lg-4 col-xl-4">
-			<div class="class-information">
-				<span class="title">How do Code Reviews work?</span>
-				<p class="clean">When you sign up for the Code Reviews monthly service, you get all of these:</p>
+      <div class="class-section">
+        <h3>How do we get started?</h3>
+        <p><strong>At the moment, we only do one Code Review a week, spots get booked out quickly.</strong> You can sign up below to get on the waiting list and be notified first when our next slot becomes available. I’ll follow up with a sample contract and a few more questions so we can both see if this will be a good fit.</p>
 
-				<ul class="whats-included">
-					<li>
-						<strong>Free <a href="http://kadira.io" target="_blank">Kadira</a> Account (Retailed at $50/month)</strong>
-						Meteor’s top performance metric and insight application. I'll help you configure alerts and error tracking.
-					</li>
-					<li>
-						<strong>Monthly Code Review</strong>
-						A comprehensive review that looks at the quality, any security vulnerabilities, etc. of your code base.
-					</li>
-					<li>
-						<strong>Monthly Report</strong>
-						Details that outline <em>where</em> and <em>how</em> your Meteor application’s performance can be improved.
-					</li>
-				</ul>
+        <div class="buy-button-block">
+          <a href="#" data-toggle="modal" data-target=".drip-modal" class="med-button buy-button button">Tell me more!</a>
+        </div>
+      </div>
+    </div>
 
-				<img src="/static/images/metrics3.png" alt="">
-			</div>
-			<div class="class-information">
-				<span class="title">How much does this cost?</span>
-				<p><strong>Code Reviews currently cost $900 per month.</strong> You’ll pay each month up front, before receiving the most recent code review and performance report.</p>
+    <!-- ///////////////////////////////////////////////// -->
+    <!-- SIDEBAR -->
+    <div class="class-sidebar col-sm-12 col-md-12 col-lg-4 col-xl-4">
+      <div class="class-information">
+        <span class="title">How do Code Reviews work?</span>
+        <p class="clean">When you sign up for the Code Reviews service, you get all of these:</p>
 
-        <p>There is no long term commitment, and you can cancel up to 5 business days before the next month starts. If you have any questions about the code review or pricing, feel free to <a href="mailto:josh@spacedojo.com">contact me.</a></p>
-			</div>
+        <ul class="whats-included">
+          <li>
+            <strong>Code Review</strong>
+            A comprehensive review that looks at the quality, any security vulnerabilities, etc. of your code base.
+          </li>
+          <li>
+            <strong>A Detailed Report</strong>
+            A detailed PDF that outline <em>where</em> and <em>how</em> your Javascript application’s performance and security can be improved.
+          </li>
+          <li>
+            <strong>A Video Walkthrough</strong>
+            A video recording of our walkthrough of your code base, with our comments on how things should be tweaked. This goes hand in hand wiht the PDF report.
+          </li>
+        </ul>
 
-			<div class="about-teacher well">
-	<div class="info">
-		<img src="/static/images/josh.jpg" class="teacher">
-		<span class="name">Josh Owens</span>
-		<span class="twitter"><a href="http://twitter.com/joshowens">@joshowens</a></span>
-	</div>
-	<p class="about">I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months. When I'm not writing, podcasting, or teaching then you can find me running the Cincinnati Meteor meetup or helping people out over Airpair.</p>
+        <img src="/static/images/metrics3.png" alt="">
+      </div>
+      <div class="class-information">
+        <span class="title">How much does this cost?</span>
+        <p><strong>Code Reviews currently cost $450 per review.</strong> You’ll review the contract and pay up front, before receiving the code review and report.</p>
+
+        <p>There is no long term commitment, just sign the contract, pay the invoice, and give us access to the code so we can get a quick and professional code review done for you. If you have any questions about the code review or pricing, feel free to <a href="mailto:josh@spacedojo.com">contact me.</a></p>
+      </div>
+
+      <div class="about-teacher well">
+  <div class="info">
+    <img src="/static/images/josh.jpg" class="teacher">
+    <span class="name">Josh Owens</span>
+    <span class="twitter"><a href="http://twitter.com/joshowens">@joshowens</a></span>
+  </div>
+  <p class="about">I'm the proprietor of Crater.io, host of Crater Podcast, and open source czar that helped create over 10 Meteor packages and 40 apps in 12 months. When I'm not writing, podcasting, or teaching then you can find me running the Cincinnati Meteor meetup or helping people out over Airpair.</p>
 </div>
-		</div>
-	</div>
+    </div>
+  </div>
 </div>
     <div class="email-footer">
-	<div class="container">
-		<h2 class="email"><strong>Questions or comments about SpaceDojo?</strong><br> Please reach out to me directly at <a href="mailto:josh@spacedojo.com">josh@spacedojo.com</a>.</h2>
-	</div>
+  <div class="container">
+    <h2 class="email"><strong>Questions or comments about SpaceDojo?</strong><br> Please reach out to me directly at <a href="mailto:josh@spacedojo.com">josh@spacedojo.com</a>.</h2>
+  </div>
 </div>
 
 <footer>
   <div class="container">
-  	<div class="row footer-content">
-  		<div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-4 text-center">
-  			<span>Support us on</span>
-  			<a href="http://patreon.com/meteorclub"><img src="/static/images/patreon.png" class="grayscale-img patreon"></a>
-  		</div>
-  		<div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-0 text-center">
-  			<span>Get news at</span>
-  			<a href="https://crater.io"><img src="/static/images/crater.png" class="grayscale-img"></a>
-  		</div>
-  	</div>
+    <div class="row footer-content">
+      <div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-4 text-center">
+        <span>Support us on</span>
+        <a href="http://patreon.com/meteorclub"><img src="/static/images/patreon.png" class="grayscale-img patreon"></a>
+      </div>
+      <div class="col-xs-8 col-xs-offset-2 col-sm-2 col-sm-offset-0 text-center">
+        <span>Get news at</span>
+        <a href="https://crater.io"><img src="/static/images/crater.png" class="grayscale-img"></a>
+      </div>
+    </div>
 
-  	<div class="text-center copyright">
+    <div class="text-center copyright">
       <p>&copy; SpaceDojo &amp; Fourbeansoup, LLC 2015.</p>
     </div>
   </div>
